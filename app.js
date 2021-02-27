@@ -17,7 +17,7 @@ app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
 
 //Connection string 
-const url=process.env.MONGO_URL || "mongodb://localhost/nimap"
+const url=process.env.MONGO_URL || "mongodb://localhost:27017/nimap"
 
 //Db connection
 mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true},function(err,db)
