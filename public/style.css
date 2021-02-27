@@ -1,0 +1,21 @@
+    /* stylesheet for pages*/
+    
+    td{
+        height: 30px;
+        width: 500px;
+        padding: 10px;
+      
+      }
+      .bod
+          {
+            margin-top: 50px;
+            margin: 0 auto;
+          }
+      .css{
+        font-size: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      
+      }
+      .btn{
+        margin-left: 4px;
+      }

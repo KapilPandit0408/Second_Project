@@ -1,0 +1,52 @@
+<%- include("partials/header") %>
+
+ 
+    
+
+<div class="container">
+
+    <div class="jumbotron">
+        <h1>Nimap Infotech Crud Single Category</h1>
+        <hr>
+        <p>This is simple crud application made in nodejs and mongodb</p>
+        <a href="/category/<%=founddata._id%>/product/add"  class="btn btn-md btn-primary">Add product</a>
+    </div></div>
+    </div>
+    
+
+    
+    <div class="container">
+
+      <% if (founddata.products.length > 0) { %>
+        <div  class="bod">
+        
+            <table   >
+              <thead>
+                <td class="css">Category Id</td>
+                <td class="css">Category Name</td>
+                <td class="css">Product Id</td>
+                <td class="css">Product Name</td>
+              </thead>
+              <tbody>
+                <% for(let product of founddata.products) {%>
+                <tr>
+                  
+                  <td>         <%=founddata._id%></td>
+                  <td>    <%=founddata.name%> </td>
+                  <td>   <%=product._id%>    </td>
+                  <td>  <%=product.name%>  </td>
+
+                 
+                </tr>
+                <%}%>
+              </tbody>
+            </table>
+        
+         </div>
+         <% } %>
+    
+        
+
+
+</div>
+<%- include("partials/footer") %>

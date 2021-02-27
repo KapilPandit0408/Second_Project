@@ -1,0 +1,30 @@
+<%- include("partials/header") %>
+<style>
+    .row{
+        margin-top: 10%;
+    }
+    .bt{
+        margin: 2px;
+        text-align: left;
+    }
+</style>
+<div class="container">
+    <div class="form-group">
+
+   <div class="row">
+       <div class="col-lg-3"></div>
+       <div class="col-lg-6">
+        <form action="/category/<%=founddata._id%>?_method=put" method="POST">
+            <input type="text" class="form-control"  name="name"  value="<%=founddata.name%>">
+
+           <div class="bt">
+            <button class="btn btn-md btn-primary"> submit</button>
+            </div>
+        </form>
+       </div>
+       <div class="col-lg-3"></div>
+
+   </div>
+
+    </div>
+</div>
