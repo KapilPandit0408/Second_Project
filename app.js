@@ -17,18 +17,26 @@ app.set("view engine","ejs");
 app.use(express.static(__dirname + "/public"));
 
 //Connection string 
-const url=process.env.MONGO_URL || "mongodb://localhost:27017/nimap"
+const url=process.env.MONGO_URL || "mongodb://localhost/SecondProject"
+
+
+
 
 //Db connection
-mongoose.connect(url,{useNewUrlParser:true,useUnifiedTopology:true},function(err,db)
+mongoose.connect('mongodb://localhost:27017/Product',
 {
-    if(err)
+    useNewUrlParser:true,
+    useUnifiedTopology:true
+},
+function(err,db)
     {
-        console.log(err);
-    }
+    if(err)
+        {
+            console.log(err);
+        }
     else{
-        console.log("connected to database");
-    }
+            console.log("connected to database");
+        }
 });
 
 //basic route redirection
