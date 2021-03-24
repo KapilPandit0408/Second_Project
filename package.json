@@ -1,13 +1,13 @@
 {
-  "name": "nimap",
+  "name": "crud",
   "version": "1.0.0",
-  "description": "crud assignment for nimap infotech",
+  "description": "My Second Project in Node js",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "Abhay B Jadhav",
+  "author": "Kapil Pandit",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
